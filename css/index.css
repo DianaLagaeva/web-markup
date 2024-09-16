@@ -1,0 +1,20 @@
+
+/* currently just style for the picture, but will expand to include the articles */
+.picture1{
+    width:40%;
+    float:left;
+}
+
+.picture1 img{
+    max-width: 100%;
+}
+
+/* This is for the the aside with pros and cons
+*/
+.prosAndCons{
+    width: 50%;
+    margin-right:5%;
+    float:right;
+}
+
+
