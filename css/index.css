@@ -1,16 +1,16 @@
-.main{
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
-}
 
+body{
+    margin:0;
+}
 /* currently just style for the picture, but will expand to include the articles */
 .article1{
-    width:100%;
-    float:left;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    display: inline-block;
 }
 .picture1{
-    width:50%;
+    width:45%;
     margin:0;
     float:left;
 }
@@ -22,22 +22,28 @@
 /* This is for the the aside with pros and cons
 */
 .prosAndCons{
-    width: 40%;
+    width: 45%;
     float:right;
 }
 
 .article2{
-    width:100%;
+    width:90%;
     float:left;
 }
 
+.article3{
+    width:90%;
+    float:left;
+}
 
 /* this is the footer with copyright information */
 .ending{
-    width:90%;
-    float:left;
-    margin-left:5%;
-    margin-right:5%;
+    width:100%;
+    margin:0;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    background-color: aquamarine;
 }
 
 
