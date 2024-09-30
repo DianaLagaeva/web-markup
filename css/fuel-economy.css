@@ -1,40 +1,36 @@
-body{
+*{
+    padding:0;
     margin:0;
 }
 
 /* This is for the navigation bar */
 .navigation{
-    width:100%;
-    padding: 0;
     border-width:0 0 1px 0;
     border-style:solid;
     border-color: black;
-    margin: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .navigation ul {
     list-style: none;
-    margin:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height:4rem;
 }
-.navigation li:not(#title) {
-    float:right;
-    line-height:67px;
-    width:8%;
-    margin-right:2%;
+
+.navigation ul li {
+    flex-basis: 9%;
 }
+
 #title{
-    float:left;
-    line-height:67px;
-    width:40%;
-    margin: 0;
-}
-#title h1{
-    margin: 0;
+    flex-basis: 35%;
+    align-self: center; 
 }
 
 /* makeup of the website title + links */
 .navigation a{
-    display:block;
+    display: block;
     text-align:center;
     text-transform:uppercase;
     text-decoration:none;

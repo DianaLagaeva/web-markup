@@ -1,36 +1,44 @@
 *{
     padding:0;
     margin:0;
+
 }
+
+
 
 /* This is for the navigation bar */
 .navigation{
+    width:100%;
+    padding: 0;
     border-width:0 0 1px 0;
     border-style:solid;
     border-color: black;
-    overflow: hidden;
+    margin: 0;
+    overflow:hidden;
 }
-
 .navigation ul {
     list-style: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    line-height:4rem;
+    margin:0;
 }
-
-.navigation ul li {
-    flex-basis: 9%;
+.navigation li:not(#title) {
+    float:right;
+    line-height:67px;
+    width:9%;
+    margin-right:2%;
 }
-
 #title{
-    flex-basis: 35%;
-    align-self: center; 
+    float:left;
+    line-height:67px;
+    width:34%;
+    margin: 0;
+}
+#title h1{
+    margin: 0;
 }
 
 /* makeup of the website title + links */
 .navigation a{
-    display: block;
+    display:block;
     text-align:center;
     text-transform:uppercase;
     text-decoration:none;
@@ -51,7 +59,6 @@
     color:#000000;
 }
 
-
 /* currently just style for the picture, but will expand to include the articles */
 .article1{
     width:90%;
@@ -59,41 +66,38 @@
     margin-right:5%;
     display: inline-block;
 }
+
 .picture1{
     width:45%;
-    margin:0;
     float:left;
 }
-
-    .picture1 img{
-        max-width: 100%;
-    }
-
+    
+.picture1 img{
+    max-width: 100%;
+}
+    
 /* This is for the the aside with pros and cons
 */
 .prosAndCons{
     width: 45%;
     float:right;
 }
-
+    
 .article2{
     width:90%;
     float:left;
 }
-
+    
 .article3{
     width:90%;
     float:left;
 }
-
+    
 /* this is the footer with copyright information */
 .ending{
     width:100%;
-    margin:0;
     float:left;
     bottom:0;
     text-align:center;
     background-color: aquamarine;
 }
-
-
