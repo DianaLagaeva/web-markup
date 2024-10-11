@@ -55,10 +55,12 @@
 /* currently just style for the picture, but will expand to include the articles */
 .article1{
     width:90%;
+    background-color: #f3f3f3;
     margin-left:5%;
     margin-right:5%;
     display: inline-block;
 }
+
 .picture1{
     width:45%;
     margin:0;

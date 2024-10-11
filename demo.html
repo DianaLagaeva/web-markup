@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/demo.css" >
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Website name</title>
 </head>
 <body>
@@ -16,12 +16,12 @@
                     <a href="index.html">Website name</a>
                     </h1>
                 </li>
-                <li><a class="current" href="index.html"> Home page</a></li>
-                <li><a href="fuel-economy.html"> Fuel economy</a></li>
-                <li><a href="emissions.html"> Emissions</a></li>
-                <li><a href="range.html"> Range</a></li>
-                <li><a href="tips.html"> Tips</a></li>
                 <li><a href="contact.html"> Contact</a></li>
+                <li><a href="tips.html"> Tips</a></li>
+                <li><a href="range.html"> Range</a></li>
+                <li><a href="emissions.html"> Emissions</a></li>
+                <li><a href="fuel-economy.html"> Fuel economy</a></li>
+                <li><a class="current" href="index.html"> Home page</a></li>
             </ul>
     </nav>
 <!-- First article-->
@@ -78,6 +78,19 @@
                 </li>
             </ol>
         </article>
+
+        <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
 <!-- Footer with copyright information -->
     <footer class="ending">
         <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>

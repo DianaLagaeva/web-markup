@@ -3,39 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/emissions.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/emissions.css" >
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Emissions</title>
 </head>
 <body>
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
-                <li id="title">
-                    <h1>
-                    <a href="index.html">Website name</a>
-                    </h1>
-                </li>
-                <li><a href="index.html"> Home page</a></li>
-                <li><a href="fuel-economy.html"> Fuel economy</a></li>
-                <li><a class="current" href="emissions.html"> Emissions</a></li>
-                <li><a href="range.html"> Range</a></li>
-                <li><a href="tips.html"> Tips</a></li>
-                <li><a href="contact.html"> Contact</a></li>
-            </ul>
-    </nav>
-<!-- First article-->
-        <article>
-            <header>
+            <li id="logo">
+                <img src="img/logo.svg" alt="The website logo" title="Home page">
+            </li>
+            <li id="title">
                 <h1>
-                    
+                <a href="index.html">EV-info</a>
                 </h1>
-            </header>
-            <p>
-            
-            </p>
-        </article>
+            </li>
+            <li><a href="index.html"> Home page</a></li>
+            <li><a href="fuel-economy.html"> Fuel economy</a></li>
+            <li><a class="current" href="emissions.html"> Emissions</a></li>
+            <li><a href="range.html"> Range</a></li>
+            <li><a href="tips.html"> Tips</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+<!-- From here onwards is where the articles reside -->
+<!-- Conclusion at the top of the page-->
+    <header>
+        <h2>
+            An EV is better for the environment after a maximum of 33.125 km using renewables.
+            An EV is better for the environment after a maximum of 51.307 km using non-renewables.
+        </h2>
+    </header>
+<!-- First article, aka the intro -->
+    <article>
+        <header>
+            <h2>
+                Various manufacturers
+            </h2>
+        </header>
+        <p>
+            The emissions of an EV are incredibly difficult to pinpoint, as there are a lot of different manufacturers with different sustainability practices and differing variable. Furthermore how the power the EV uses is created also matters, as an EV driving on coal powered energy is not carbon neutral in driving. All CO2 figures from this point on are therefore also CO2 equivalent.
+        </p>
+    </article>
 
+<!-- Second article, about emissions from production -->
+    <article>
+        <header>
+            <h2>
+                The emissions from production
+            </h2>
+        </header>
+        <p>
+            According to the consultancy company  McKinsey & Company, the average EV battery today emits up to 100 kg of CO2/kWh of capacity, mainly due to 70% of EV batteries being made in China.
+            We're assuming an EV has 40-60 kWh of capacity, which would be 4000-6000 kg of CO2 per battery, or 4-6 tonnes of CO2. It is important to note here that Sweden currently has the lowest CO2/kWh with 45 kg, resulting in 1,8-2,7 tonnes of CO2 per battery. 
+            The EU average would be 78 kg of CO2/kWh, making for 3,12-4,68 tonnes of CO2 per battery. 
+            Still a lot, but significantly less than China's 108 kg of CO2/kWh, totalling up to 4,32-6,48 tonnes of CO2 per battery.
+            According to Transport & Environment, an advocacy group for clean transport, an additional 6 tonnes of CO2 are emitted to make one EV, which brings our total to 10-12 tonnes of CO2.
+            According to the same source, an average 6,7 tonnes of CO2 are emitted to produce one gasoline powered car.
+        </p>
+    </article>
+
+<!-- Third article, about emissions from driving -->
+    <article>
+        <header>
+            <h2>
+                The emissions from driving
+            </h2>
+        </header>
+        <p>
+            According to a research report by TNO, the average gasoline powered car emits about 160 grams of CO2 per kilometre driven.
+            The emissions from an EV depends on how the electricity the EV uses was generated, using 100% renewable sources, the emissions are 0 grams of CO2 per kilometre driven. 
+            When using the regular power grid, we're talking about 270 grams of CO2 per kWh used, or 56,7 grams of CO2 per kilometre driven, assuming 21 kWh/100 km. This is with todays mix of power, as we are transitioning more and more towards renewable energy it is expected that this CO2 per kilometre will go down even more.
+        </p>
+    </article>
+
+<!-- Fourth article, conclusion -->
+    <article>
+        <header>
+            <h2>
+                Conclusion
+            </h2>
+        </header>
+        <p>
+            Assuming 100% renewable sources are used to charge the EV, the EV will have produced less emissions after 20.625-33.125 km.
+            Assuming you'd use the regular power grid to charge, the EV will have produced less emissions after 31.946-51.307 km.
+            Assuming 12.000 kms driven per year, that is after 1,72-2,76 years using renewables, and 2,66-4,28 years if not.
+        </p>
+    </article>
 
 <!-- Footer with copyright information -->
     <footer>

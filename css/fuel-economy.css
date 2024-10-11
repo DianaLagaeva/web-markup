@@ -8,6 +8,7 @@
     border-width:0 0 1px 0;
     border-style:solid;
     border-color: black;
+    background-color: #ACE1AF;
     overflow: hidden;
 }
 
@@ -23,18 +24,28 @@
     flex-basis: 9%;
 }
 
+/*makeup for the logo */
+#logo{
+    align-self: center;
+    flex-basis: 3.5rem;
+    line-height: 0rem;
+    border-radius: 50%;
+    background-color: #59B1AE;
+}
+
+/* makeup of the website title + links */
 #title{
     flex-basis: 35%;
     align-self: center; 
 }
 
-/* makeup of the website title + links */
 .navigation a{
     display: block;
     text-align:center;
     text-transform:uppercase;
     text-decoration:none;
 }
+
 
 /* This is for hovering over, current page hightlight and getting rid of the visited pages being purple */
 .navigation ul li > a:hover{
@@ -49,4 +60,64 @@
 
 .navigation ul li a:visited:not(.current, .navigation ul li > a:hover){
     color:#000000;
+}
+
+/* From here onwards is where the css for the articles is */
+
+.main{
+    padding-top: 2%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    max-width:100%;
+    min-height:80vh;
+    background-color: #F3F3F3;
+}
+
+.main > article , .main > header{
+    width: 50%;
+    margin: 1rem 25% 1rem 13%;
+}
+
+.main > header{
+    box-sizing:border-box;
+    padding: 10px 20px;
+    border: 2px solid #59B1AE;
+    border-radius: 10px;
+    background-color: #ACE1AF;
+}
+.picture1, .picture2{
+    width: 24%;
+    margin-left: 25%;
+    margin-right: 1%;
+    align-self:center;
+}
+.picture2{
+    margin-left: 1%;
+    margin-right: 25%;
+}
+.picture3{
+    width: 20%;
+    margin: 1rem 4% 1rem 1%;
+}
+#secondary{
+    width:50%;
+    margin:1rem 0;
+}
+#secondary > article{
+    margin: 1rem 0;
+}
+img{
+    width:100%;
+    border-radius: 5px;
+}
+
+/* this is where the footer goes */
+footer{
+    position:relative;
+    width:100vw;
+    height: 5vh;
+    background-color:#ACE1AF;
 }
