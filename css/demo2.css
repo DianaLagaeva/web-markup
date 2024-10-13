@@ -3,65 +3,6 @@
     margin:0;
 }
 
-/* This is for the navigation bar */
-.navigation{
-    border-width:0 0 1px 0;
-    border-style:solid;
-    border-color: black;
-    background-color: #ACE1AF;
-    overflow: hidden;
-}
-
-.navigation ul {
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    line-height:4rem;
-}
-
-.navigation ul li {
-    flex-basis: 9%;
-}
-
-/*makeup for the logo */
-#logo{
-    align-self: center;
-    flex-basis: 3.5rem;
-    line-height: 0rem;
-    border-radius: 50%;
-    background-color: #59B1AE;
-}
-
-/* makeup of the website title + links */
-#title{
-    flex-basis: 35%;
-    align-self: center; 
-}
-
-.navigation a{
-    display: block;
-    text-align:center;
-    text-transform:uppercase;
-    text-decoration:none;
-}
-
-
-/* This is for hovering over, current page hightlight and getting rid of the visited pages being purple */
-.navigation ul li > a:hover{
-    background-color: #343434;
-    color:#FFFFFF;
-}
-
-.current{
-    background-color: #111111;
-    color:#ffffff;
-}
-
-.navigation ul li a:visited:not(.current, .navigation ul li > a:hover){
-    color:#000000;
-}
-
 /* From here onwards is where the css for the articles is */
 
 .main{
@@ -69,7 +10,7 @@
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: flex-start;
     max-width:100%;
     min-height:80vh;
@@ -78,7 +19,7 @@
 
 .main > article , .main > header{
     width: 50%;
-    margin: 1rem;
+    margin: 1rem 25% 1rem 13%;
 }
 
 .main > header{
@@ -101,9 +42,15 @@
 .picture3{
     width: 20%;
     margin: 1rem 4% 1rem 1%;
-    float:  right;
 }
-img{
+#secondary{
+    width:50%;
+    margin:1rem 0;
+}
+#secondary > article{
+    margin: 1rem 0;
+}
+figure img{
     width:100%;
     border-radius: 5px;
 }

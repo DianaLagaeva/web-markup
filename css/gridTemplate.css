@@ -1,0 +1,40 @@
+/* for the grid template */
+.navigation{
+    grid-area: navigation;
+}
+
+.conclusion{
+    grid-area: topConclusion;
+}   
+
+.article1{
+    grid-area: article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+
+.article3{
+    grid-area: article3;
+}
+
+.article4{
+    grid-area: article4;
+}
+
+.picture1{
+    grid-area: picture1;
+}
+
+.picture2{
+    grid-area: picture2;
+}
+
+.picture3{
+    grid-area: picture3;
+}
+
+footer{
+    grid-area: footer;
+}

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/gridTemplate.css" >
     <link rel="stylesheet" type="text/css" href="css/fuel-economy.css" >
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Fuel economy</title>
@@ -11,10 +13,8 @@
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
-                <li id="logo">
-                    <img src="img/logo.svg" alt="The website logo" title="Home page">
-                </li>
                 <li id="title">
+                    <a href="index.html"><img class="logo" src="img/logo.svg" alt="The website logo" title="Home page"></a>
                     <h1>
                     <a href="index.html">EV-info</a>
                     </h1>
@@ -28,15 +28,16 @@
             </ul>
     </nav>
 <!-- From here onwards is where the articles reside -->
-<!-- Conclusion at the top of the page-->
-<article class="main">    
-    <header>
-        <h2>
-            An EV is about € 420,- per year cheaper if charging in public, or €742,80 cheaper per year if charging at home.
-        </h2>
-    </header>
+<!-- Conclusion at the top of the page-->  
+    <article class="conclusion">
+        <header>
+            <h2>
+                An EV is about € 420,- per year cheaper if charging in public, or €742,80 cheaper per year if charging at home.
+            </h2>
+        </header>
+    </article>
 <!-- First article, aka intro piece of text-->
-    <article>
+    <article class="article1">
         <header>
             <h2>
                 Difficult to compare
@@ -46,7 +47,7 @@
     </article>
 
 <!-- second article, about efficiency -->
-    <article>
+    <article class="article2">
         <header>
             <h2>
                 The efficiency of an electric car and a gasoline powered car
@@ -67,21 +68,26 @@
         <figcaption> This is the battery pack of a car.</figcaption>
     </figure>
 <!-- third article, about fuel prices -->
-<section id="secondary">
-    <header>
-        <h2>
-            The prices of electricity and fuel
-        </h2>
-    </header>
-    <p>
-        Another main factor is the price of electricity and the price of fuel. For electric cars, it is a lot cheaper to charge your car at home compared to a public charging solution, however this is not an option for everyone, which is why I have included both prices when charging at home and prices for charging at a public charging pole.
-        According to the CBS, in the first quarter of 2024 the average price of one litre of gasoline was € 1,964.
-        According to that same graph, the average price of one kWh at a public charging pole was € 0,457.
-        According to the CBS, in the first quarter of 2024 the average price of one kWh of electricity was € 0,3291, this is our price per kWh when charging at home.
-    </p>
+    <article class="article3">
+        <header>
+            <h2>
+                The prices of electricity and fuel
+            </h2>
+        </header>
+        <p>
+            Another main factor is the price of electricity and the price of fuel. For electric cars, it is a lot cheaper to charge your car at home compared to a public charging solution, however this is not an option for everyone, which is why I have included both prices when charging at home and prices for charging at a public charging pole.
+            According to the CBS, in the first quarter of 2024 the average price of one litre of gasoline was € 1,964.
+            According to that same graph, the average price of one kWh at a public charging pole was € 0,457.
+            According to the CBS, in the first quarter of 2024 the average price of one kWh of electricity was € 0,3291, this is our price per kWh when charging at home.
+        </p>
+    </article>
+    <figure class="picture3">
+        <img src="img/gas_prices.jpg" alt="A board with fuel prices, showing that one litre of Euro 95 costs €1,819." title="Board with fuel prices." >
+        <figcaption> One litre of Euro 95 currently costs € 1,819.</figcaption>
+    </figure>
 
 <!-- fourth article, the conclusion -->
-    <article>
+    <article class="article4">
         <header>
             <h2>
                 What is cheaper
@@ -94,15 +100,21 @@
             When driving that amount per year, you would save €420,00 per year when charging in public, or € 742,80 per year when charging at home.
         </p>
     </article>
-</section>
-<figure class="picture3">
-    <img src="img/gas_prices.jpg" alt="A board with fuel prices, showing that one litre of Euro 95 costs €1,819." title="Board with fuel prices." >
-    <figcaption> One litre of Euro 95 currently costs € 1,819.</figcaption>
-</figure>
-</article>
 <!-- Footer with copyright information -->
     <footer>
-        <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>
+        <ul>
+            <li><a href="index.html"><img class="logo" src="img/logo.svg" alt="The website logo" title="Home page"></a></li>
+            <li>Copyright &copy; Jeroen van der Valk. All Rights Reserved</li>
+            <li><a href="contact.html">About me</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html"> Home page</a></li>
+            <li><a href="fuel-economy.html"> Fuel economy</a></li>
+            <li><a href="emissions.html"> Emissions</a></li>
+            <li><a href="range.html"> Range</a></li>
+            <li><a href="tips.html"> Tips</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
     </footer>
 
 </body>
