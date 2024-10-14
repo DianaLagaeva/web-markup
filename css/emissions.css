@@ -4,31 +4,39 @@
 }
 
 /* From here onwards is where the css for the articles is */
-
 body{
     background-color: #F3F3F3;
+}
+
+
+.main{
     display:grid;
     justify-content: center;
     grid-template-columns: 25% 25% 25% 25%;
 
     grid-template-areas: 
-        'navigation navigation      navigation      navigation'
+        '.          pageTitle       pageTitle       .'
         '.          topConclusion   topConclusion   .'
         '.          article1        article1        picture1'
         '.          article2        article2        picture1'
         '.          picture2        picture2        picture1'
         '.          article3        article3        picture3'
         '.          article4        article4        picture3'
-        '.          .               .               picture3'
-        'footer     footer          footer          footer';
+        '.          .               .               picture3';
 }
 
 /* makeup of the articles and images*/
 
-body > article , .main > header{
+.main > article {
     width: 100%;
     margin: 0.75rem 0;
     box-sizing:border-box;
+}
+
+.main > header{
+    width:100%;
+    margin: 2rem 0 1.25rem 0;
+    text-align:center;
 }
 
 .conclusion {
@@ -39,18 +47,24 @@ body > article , .main > header{
     background-color: #ACE1AF;
 }
 
+.picture1 img, .picture1 figcaption{
+    width: 22vw;
+    border-radius: 8px;
+}
+
 .picture2 img, .picture2 figcaption{
     width: 50vw;
     border-radius: 8px;
 }
 
-.picture1 , .picture2 , .picture3{
-    justify-self: center;
-}
-
-.picture3 img , .picture3 figcaption , .picture1 img, .picture1 figcaption{
+.picture3 img, .picture3 figcaption{
     width: 22vw;
     border-radius: 8px;
+}
+
+.picture1 , .picture2 , .picture3{
+    margin: 0.75rem 0;
+    justify-self: center;
 }
 
 

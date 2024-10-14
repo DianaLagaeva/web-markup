@@ -1,6 +1,6 @@
 /* for the grid template */
-.navigation{
-    grid-area: navigation;
+.pageTitle{
+    grid-area: pageTitle;
 }
 
 .conclusion{
@@ -35,6 +35,3 @@
     grid-area: picture3;
 }
 
-footer{
-    grid-area: footer;
-}

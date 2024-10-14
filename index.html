@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/gridTemplate.css" >
     <link rel="stylesheet" type="text/css" href="css/index.css" >
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>EV-info</title>
@@ -11,43 +13,67 @@
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
-                <li id="title">
-                    <h1>
+            <li id="title">
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="The website logo" title="Home page"></a>
+                <h1>
                     <a href="index.html">EV-info</a>
-                    </h1>
-                </li>
-                <li><a class="current" href="index.html"> Home page</a></li>
-                <li><a href="fuel-economy.html"> Fuel economy</a></li>
-                <li><a href="emissions.html"> Emissions</a></li>
-                <li><a href="range.html"> Range</a></li>
-                <li><a href="tips.html"> Tips</a></li>
-                <li><a href="contact.html"> Contact</a></li>
-            </ul>
+                </h1>
+            </li>
+            <li><a class="current" href="index.html"> Home page</a></li>
+            <li><a href="fuel-economy.html"> Fuel economy</a></li>
+            <li><a href="emissions.html"> Emissions</a></li>
+            <li><a href="range.html"> Range</a></li>
+            <li><a href="tips.html"> Tips</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
     </nav>
 <!-- From here onwards is where the articles reside-->
-<!-- First article-->
-        <article class="article1">
-            <header>
-                <h2>
-                    Welcome to EV-info.nl!
-                </h2>
-            </header>
+<!-- Page title and tagline -->
+    <article class="main">
+        <header class="pageTitle">
+            <h2>
+                Welcome to EV-info.nl!
+            </h2>
+
+            <h3>
+                Information about Electric Vehicles
+            </h3>
             <p>
                 Here you can find an array of information about Electric Vehicles, mainly compared to Internal Combustion Engine (ICE) Vehicles, to help you decide if an Electric Vehicle (EV) is right for you!
             </p>
-        </article>
+        </header>
         <figure class="picture1">
-            <img src="img/dioptaas1.jpg" alt="Should be a picture of a car. Currently a picture of a rock" title="a picture of my car" >
-            <figcaption> A picture of my car. Currently a placeholder rock.</figcaption>
+            <img src="img/car_picture_main_page.jpg" alt="A picture of an Electric vehicle" title="a picture of my car" >
+            <figcaption> A picture of my car.</figcaption>
         </figure>
 <!-- list of pros and cons -->
-        <aside class="prosAndCons">
+        <article class="article1">
             <header> 
                 <h2>
                     Pros and cons of purchasing an EV compared to a gasoline powered car (ICE) 
                 </h2>
             </header>
-        </aside>
+            <ul class="Pros_and_Cons">
+                <li>
+                    Pros
+                    <ol>
+                        <li>Cheaper to fuel</li>
+                        <li>More sustainable</li>
+                        <li>Better future proofing</li>
+                        <li>Less money to the fossil fuel industry</li>
+                    </ol>
+                </li>
+                <li>
+                    Cons
+                    <ol>
+                        <li>More expensive to purchase</li>
+                        <li>Less range</li>
+                        <li>Takes longer to fuel</li>
+                        <li>Travelling is more difficult</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
 <!-- Second article-->
         <article class="article2">
             <header> 
@@ -61,6 +87,11 @@
                 <a href="fuel-economy.html"> Find out here.</a>
             </p>
         </article>
+        <figure class="picture2">
+            <img src="img/eu_flag.jpg" alt="Picture of a the flag of the European Union." title="a picture of the EU flag." >
+            <figcaption> The EU is implementing an increasing number of regulations.</figcaption>
+        </figure>
+<!-- Third article -->
         <article class="article3">
             <header>
                 <h2>
@@ -79,6 +110,11 @@
                 </li>
             </ol>
         </article>
+        <figure class="picture3">
+            <img src="img/car.jpg" alt="Picture of a Electric Vehicle at the car dealership." title="a picture of a car at a car dealership." >
+            <figcaption> A car at a car dealership.</figcaption>
+        </figure>
+    </article>
 <!-- Footer with copyright information -->
     <footer class="ending">
         <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>
