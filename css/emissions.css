@@ -9,12 +9,13 @@ body{
 }
 
 
-.main{
+body{
     display:grid;
     justify-content: center;
     grid-template-columns: 25% 25% 25% 25%;
 
     grid-template-areas: 
+        'navigation navigation      navigation      navigation'
         '.          pageTitle       pageTitle       .'
         '.          topConclusion   topConclusion   .'
         '.          article1        article1        picture1'
@@ -22,18 +23,19 @@ body{
         '.          picture2        picture2        picture1'
         '.          article3        article3        picture3'
         '.          article4        article4        picture3'
-        '.          .               .               picture3';
+        '.          .               .               picture3'
+        'footer     footer          footer          footer';
 }
 
 /* makeup of the articles and images*/
 
-.main > article {
+body > article {
     width: 100%;
     margin: 0.75rem 0;
     box-sizing:border-box;
 }
 
-.main > header{
+body > header{
     width:100%;
     margin: 2rem 0 1.25rem 0;
     text-align:center;
@@ -69,7 +71,7 @@ body{
 
 
 /* this is for the makeup of the footer */
-footer{
+.footer{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -79,15 +81,15 @@ footer{
     background-color:#ACE1AF;
 }
 
-footer ul{
+.footer ul{
     list-style: none;
 }
 
-footer .logo{
+.footer .logo{
     float:inherit;
 }
 
-footer a{
+.footer a{
     display: block;
     text-align:center;
     text-transform:uppercase;

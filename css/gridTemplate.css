@@ -3,6 +3,10 @@
     grid-area: pageTitle;
 }
 
+.navigation{
+    grid-area: navigation;
+}
+
 .conclusion{
     grid-area: topConclusion;
 }   
@@ -35,3 +39,6 @@
     grid-area: picture3;
 }
 
+.footer{
+    grid-area: footer;
+}
