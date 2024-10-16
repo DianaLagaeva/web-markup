@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/gridTemplate.css" >
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Contact</title>
 </head>
 <body>
@@ -12,8 +14,9 @@
     <nav class="navigation">
         <ul>
                 <li id="title">
+                    <img class="logo" src="img/logo.svg" alt="The website logo" title="Home page">
                     <h1>
-                    <a href="index.html">EV-info</a>
+                        <a href="index.html">EV-info</a>
                     </h1>
                 </li>
                 <li><a href="index.html"> Home page</a></li>
@@ -24,59 +27,77 @@
                 <li><a class="current" href="contact.html"> Contact</a></li>
             </ul>
     </nav>
-<!-- First article-->
-        <article>
-            <header>
-                <h2>
-                    About me
-                </h2>
-            </header>
-            <p>
-                My name is <em>Jeroen van der Valk</em>. I am studying at the university of InHolland. At the time of writing this article I am 23 years old. As with most people my age, I worry about the future of my generation, especially with respect to the ever present threat that climate changes poses, this is also one of the main reasons I wanted to look if an EV was a viable option for me.
-            </p>
-        </article>
+<!-- From here onwards is where the articles reside -->
+    <header class="pageTitle">
+        <h2>
+            Contact
+        </h2>
+    </header>
+<!-- First article, about me-->
+    <article class="article1">
+        <header>
+            <h3>
+                About me
+            </h3>
+        </header>
+        <p>
+            My name is <em>Jeroen van der Valk</em>. I am studying at the university of InHolland. At the time of writing this article I am 23 years old. As with most people my age, I worry about the future of my generation, especially with respect to the ever present threat that climate changes poses, this is also one of the main reasons I wanted to look if an EV was a viable option for me.
+        </p>
+    </article>
+    <figure class="picture1">
+        <img src="img/contact_picture.jpg" alt="a picture of me, the author of this website." title="Me"/>
+        <figcaption> This is me.</figcaption>
+    </figure>
+<!-- Second article, about my first car-->
+    <article class="article2">
+        <header>
+            <h3>
+                My first car
+            </h3>
+        </header>
+        <p>
+            Back in 2023 my brother and I wanted to buy our first car. While looking at cars to buy, I researched almost every single aspect of EVs in great detail, also to prepare myself for how driving an EV would truly be.
+            Eventually we ended up buying a 2020 (30th of December) fully electric Opel Corsa. I’m incredibly happy with the car, I have even driven it to Paris and back to the Netherlands. If I had the choice, I would definitely buy it again.
+        </p>
+        <p>
+            When I was researching cars, however, I realized how difficult it was to find concise information about EVs, how many stigmas, and legitimate concerns there are around EVs, which is why I have made this website.
+        </p>
+    </article>
+    <figure class="picture2">
+        <img src="img/car_picture.jpg" alt="a picture of my car" title="my car"/>
+        <figcaption> This is my brother's and my car.</figcaption>
+    </figure>
+<!-- Third article, about how to contact me-->
+    <article class="article3">
+        <header>
+            <h3>
+                Contact me
+            </h3>
+        </header>
+        <p>
+            If I have made a mistake in the information given on the website, or if you would just like to ask me a question, please fill in the form below and I will do my best to get back to you in a timely manner.
+        </p>
+        <form class="contact_form" action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
 
-        <article>
-            <header>
-                <h2>
-                    My first car
-                </h2>
-            </header>
-            <p>
-                Back in 2023 my brother and I wanted to buy our first car. While looking at cars to buy, I researched almost every single aspect of EVs in great detail, also to prepare myself for how driving an EV would truly be.
-                Eventually we ended up buying a 2020 (30th of December) fully electric Opel Corsa. I’m incredibly happy with the car, I have even driven it to Paris and back to the Netherlands. If I had the choice, I would definitely buy it again.
-            </p>
-            <figure>
-                <img src="img/placeholder-car.png" alt="a picture of my car" title="my car"/>
-                <figcaption> This is my brother's and my car.</figcaption>
-            </figure>
-            <p>
-                When I was researching cars, however, I realized how difficult it was to find concise information about EVs, how many stigmas, and legitimate concerns there are around EVs, which is why I have made this website.
-            </p>
-        </article>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
 
-        <article>
-            <p>
-                If I have made a mistake in the information given on the website, or if you would just like to ask me a question, please fill in the form below and I will do my best to get back to you in a timely manner.
-            </p>
-            <form>
-                <legend><strong>Question form:</strong></legend>
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" value="First name" >
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required></textarea>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" value="Last name" >
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" value="email">
-                
-                <input type="submit" value="Submit"/>
-            </form>
-        </article>
+            <input type="submit" value="Submit">
+        </form>
+    </article>
+    <figure class="picture3">
+        <img src="img/edited_car_in_france.jpg" alt="a picture of my car" title="my car"/>
+        <figcaption> This is my brother's and my car.</figcaption>
+    </figure>
 
 
 <!-- Footer with copyright information -->
-    <footer>
+    <footer class="footer">
         <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>
     </footer>
 </body>
