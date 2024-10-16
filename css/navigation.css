@@ -46,7 +46,7 @@
 }
 
 
-/* This is for hovering over, current page hightlight and getting rid of the visited pages being purple */
+/* This is for hovering over, current page hightlight and getting rid of the link colours */
 .navigation ul li > a:hover{
     background-color: #343434;
     color:#FFFFFF;
@@ -57,6 +57,6 @@
     color:#ffffff;
 }
 
-.navigation ul li a:visited:not(.current, .navigation ul li > a:hover){
+.navigation ul li a:not(.current, .navigation ul li > a:hover){
     color:#000000;
 }
