@@ -3,42 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/gridTemplate.css" >
     <link rel="stylesheet" type="text/css" href="css/tips.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Tips</title>
 </head>
 <body>
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
-                <li id="title">
-                    <h1>
-                    <a href="index.html">EV-info</a>
-                    </h1>
-                </li>
-                <li><a href="index.html"> Home page</a></li>
-                <li><a href="fuel-economy.html"> Fuel economy</a></li>
-                <li><a href="emissions.html"> Emissions</a></li>
-                <li><a href="range.html"> Range</a></li>
-                <li><a class="current" href="tips.html"> Tips</a></li>
-                <li><a href="contact.html"> Contact</a></li>
-            </ul>
-    </nav>
-<!-- First article-->
-        <article>
-            <header>
+            <li id="title">
+                <img class="logo" src="img/logo.svg" alt="The website logo" title="Home page">
                 <h1>
-                    
+                    <a href="index.html">EV-info</a>
                 </h1>
-            </header>
-            <p>
-            
-            </p>
-        </article>
-
-
+            </li>
+            <li><a href="index.html"> Home page</a></li>
+            <li><a href="fuel-economy.html"> Fuel economy</a></li>
+            <li><a href="emissions.html"> Emissions</a></li>
+            <li><a href="range.html"> Range</a></li>
+            <li><a class="current" href="tips.html"> Tips</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+<!-- From here onwards is where the articles reside -->
+    <header class="pageTitle">
+        <h2>
+            Tips
+        </h2>
+    </header>
+<!-- First article, about second-hand electric vehicles -->
+    <article class="article1">
+        <header>
+            <h3>
+                Second-hand electric vehicles (EVs)
+            </h3>
+        </header>
+        <p>
+            EVs, like most cars, depreciate in value. However, partially due to the rapid development of new EVs and EV technology, the price of second hand EVs drops faster than their internal combustion engine (ICE) counterparts. 
+            This means that a new EV bought today is will likely only be worth about 49% of its original value in 3 years, compared to 64% of its original value for an ICE vehicle (assuming 50.000 km driven in 3 years), according from data from Autotrader. 
+            EVs bought in the past also depreciated at a similar rate, which means that it is very possible to find a good EV that has already depreciated 50% or even more.
+            To find a second hand EV, I recommend looking at the EV database, as they have extensive data on every single EV made for the European market, including the original price, range, and safety rating.
+        </p>
+    </article>
+    <figure class="picture1">
+        <img src="img/Car_depreciation.png" alt="Graph showing that an EV is worth about 49% of it's original value after 3 years." title="a graph showing EV and ICE depreciation" >
+        <figcaption> An EV depreciates faster than a car with an internal combustion engine.</figcaption>
+    </figure>
+<!-- Second article, about where to charge-->
+    <article class="article2">
+        <header>
+            <h3>
+                Where to charge
+            </h3>
+        </header>
+        <p>
+            An EV will always be cheaper to charge at home compared to a public charging point.
+            Fast charging will almost always be the most expensive option, and it can also increase battery degradation because of the high charging speeds. 
+            If you are able to charge your EV at home, it is recommended you do so, as it is both more convenient and cheaper than the other options. 
+            You can charge an EV at home through a wall outlet or your own private charging point, however, using a wall outlet to charge is extremely slow.
+            I would even go as far as to not recommend an EV if you don't have a place in mind to charge it at. If you cannot charge your EV at home, the next best option would be a regular public charging point.
+        </p>
+    </article>
+    <figure class="picture2">
+        <img src="img/charging_pole.jpg" alt="A picture of a public charging pole." title="A public charging pole" >
+        <figcaption> If you cannot charge your EV at home, a public charging pole is generally your best option.</figcaption>
+    </figure>
+<!-- Third article, about charging infrastructure -->
+    <article class="article3">
+        <header>
+            <h3>
+                Charging speed
+            </h3>
+        </header>
+        <p>
+            When buying an EV, it is important to look at its charging capabilities. 
+            There are two options a car can have: 1 phase and 3 phase. This refers to the EV's regular charging speed, so this does not influence the fast charging speed. 
+            A 3 phase EV can charge three times as fast as a 1 phase EV when connected to most charging poles. If you are able to charge your EV at home, the difference between 1 phase or 3 phase does not really matter as you will plug in your EV at night and unplug it in the morning. 
+            If you are planning to use public charging points, I would definitely recommend choosing a 3 phase charging EV.
+        </p>
+    </article>
+    <figure class="picture3">
+        <img src="img/1phase_and_3phase_plugs.png" alt="A drawing showing the difference between a 1 phase and a 3 phase plug." title="A 1 phase and a 3 phase charging plug" >
+        <figcaption> A 3 phase plug is three times as fast as a 1 phase plug, if the 3 phase plug is supported.</figcaption>
+    </figure>
 <!-- Footer with copyright information -->
-    <footer>
+    <footer class="footer">
         <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>
     </footer>    
 </body>
