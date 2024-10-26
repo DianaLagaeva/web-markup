@@ -1,95 +1,40 @@
-*{
-    padding:0;
-    margin:0;
-}
-
-/* From here onwards is where the css for the articles is */
-body{
-    background-color: #F3F3F3;
-}
-
-
+/* This is for desktop */
 body{
     display:grid;
     justify-content: center;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 50% 25%;
 
     grid-template-areas: 
-        'navigation navigation      navigation      navigation'
-        '.          pageTitle       pageTitle       .'
-        '.          article1        article1        .'
-        '.          picture1        picture1        .'
-        '.          article2        article2        picture2'
-        '.          article3        article3        picture2'
-        '.          picture3        picture3        picture2'
-        'footer     footer          footer          footer';
-}
-
-/* makeup of the articles and images*/
-
-body > article {
-    width: 100%;
-    margin: 0.75rem 0;
-    box-sizing:border-box;
-}
-
-body > header{
-    width:100%;
-    margin: 2rem 0 1.25rem 0;
-    text-align:center;
-}
-
-.conclusion {
-    padding: 10px 20px;
-    margin-top: 2rem;
-    border: 2px solid #59B1AE;
-    border-radius: 10px;
-    background-color: #ACE1AF;
-}
-
-.picture1 img, .picture1 figcaption{
-    width: 40vw;
-    border-radius: 8px;
-}
-
-.picture2 img, .picture2 figcaption{
-    width: 22vw;
-    border-radius: 8px;
-}
-
-.picture3 img, .picture3 figcaption{
-    width: 30vw;
-    border-radius: 8px;
-}
-
-.picture1 , .picture2 , .picture3{
-    margin: 0.75rem 0;
-    justify-self: center;
+        'navigation     navigation      navigation'
+        '.              pageTitle       .'
+        '.              article1        .'
+        '.              picture1        .'
+        '.              article2        picture2'
+        '.              article3        picture2'
+        '.              picture3        picture2'
+        'footer         footer          footer';
 }
 
 
-/* this is for the makeup of the footer */
-.footer{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width:100vw;
-    padding: 1rem 0;
-    margin-top: 4rem;
-    background-color:#ACE1AF;
-}
+/* this is for mobile */
+@media (max-width:769px){
+    body{
+        grid-template-columns: 5% 90% 5%;
 
-.footer ul{
-    list-style: none;
-}
+        grid-template-areas: 
+            'navigation     navigation      navigation'
+            '.              pageTitle       .'
+            '.              article1        .'
+            '.              picture1        .'
+            '.              article2        .'
+            '.              picture2        .'
+            '.              article3        .'
+            '.              picture3        .'
+            'footer         footer          footer';
+    }
 
-.footer .logo{
-    float:inherit;
-}
+    .illustration_image{
+        width:100%;
+    }
 
-.footer a{
-    display: block;
-    text-align:center;
-    text-transform:uppercase;
-    text-decoration:none;
 }

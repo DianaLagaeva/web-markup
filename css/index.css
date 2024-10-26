@@ -1,58 +1,35 @@
-*{
-    padding:0;
-    margin:0;
-}
-
 body{
     display:grid;
     justify-content: center;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 10% 15% 12.5% 12.5%;
+    grid-template-columns: 20% 5% 35% 15% 5% 20%;
      grid-template-areas: 
-        'navigation navigation  navigation  navigation      navigation      navigation  navigation  navigation'
-        '.          .           pageTitle   pageTitle       pageTitle       pageTitle   .           .'
-        '.          picture1    picture1    picture1        picture1        picture1    picture1    .'
-        '.          .           article1    article1        article1        article1    .           .'
-        '.          .           article2    article2        article2        picture2    .           .'
-        '.          .           article3    article3        article3        picture2    .           .'
-        '.          .           picture3    picture3        picture3        picture3    .           .'
-        'footer     footer      footer      footer          footer          footer      footer      footer';    
+        'navigation navigation  navigation  navigation  navigation  navigation'
+        '.          .           pageTitle   pageTitle   .           .'
+        '.          picture1    picture1    picture1    picture1    .'
+        '.          .           article1    article1    .           .'
+        '.          .           article2    picture2    .           .'
+        '.          .           article3    picture2    .           .'
+        '.          .           picture3    picture3    .           .'
+        'footer     footer      footer      footer      footer      footer';    
 }
 
-/* makeup of the articles and images*/
-
-body > article {
-    width: 100%;
-    margin: 0.75rem 0;
-    box-sizing:border-box;
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 5% 90% 5%;
+         grid-template-areas: 
+            'navigation navigation      navigation'
+            '.          pageTitle       .'
+            '.          picture1        .'
+            '.          article1        .'
+            '.          article2        .'
+            '.          picture2        .'
+            '.          article3        .'
+            '.          picture3        .'
+            'footer     footer          footer';    
+    }
 }
 
-body > header{
-    width:100%;
-    margin: 2rem 0 1.25rem 0;
-    text-align:center;
-}
-
-.picture1 img, .picture1 figcaption{
-    width: 60vw;
-    border-radius: 8px;
-}
-
-.picture2 img, .picture2 figcaption{
-    width: 15vw;
-    border-radius: 8px;
-}
-
-.picture3 img , .picture3 figcaption{
-    width: 50vw;
-    border-radius: 8px;
-}
-
-.picture1 , .picture2 , .picture3{
-    margin: 0.75rem 0;
-    justify-self: center;
-}
-
-/* Makeup of article 1, the pros and cons list */
+/* Extra makeup for article 1, the pros and cons list */
 .article1{
     padding: 10px 20px;
     margin-top: 2rem;
@@ -68,34 +45,37 @@ body > header{
     list-style:none;
 }
 
-
-/* this is the footer with copyright information */
-.footer{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width:100vw;
-    padding: 1rem 0;
-    margin-top: 4rem;
-    background-color:#ACE1AF;
+.Pros_and_Cons li{
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+    text-indent: -1rem;
 }
 
-.footer ul{
-    list-style: none;
+.Pros_and_Cons ol li, aside ol li{
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+    text-indent: initial;
 }
 
-.footer .logo{
-    float:inherit;
+/*Text indent is very useful here, moves the numbers of the ordered list slightly to thee right */
+.article3 ol{
+    list-style-position: inside;
 }
 
-.footer a{
-    display: block;
-    text-align:center;
-    text-transform:uppercase;
-    text-decoration:none;
+/* Extra makeup for article 3, the assumptions */
+aside ol li {
+    text-indent: inherit;
 }
-
-
 
 
 

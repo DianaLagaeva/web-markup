@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/navigation.css" >
-    <link rel="stylesheet" type="text/css" href="css/gridTemplate.css" >
-    <link rel="stylesheet" type="text/css" href="css/contact.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/general_css.css" >
+    <link rel="stylesheet" type="text/css" href="css/contact.css" >
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Contact</title>
 </head>
 <body>
@@ -14,9 +14,9 @@
     <nav class="navigation">
         <ul>
                 <li id="title">
-                    <img class="logo" src="img/logo.svg" alt="The website logo" title="Home page">
+                    <a href="index.html"><img class="logo" src="img/logo.svg" alt="The website logo" title="Home page"></a>
                     <h1>
-                        <a href="index.html">EV-info</a>
+                        <a href="index.html">EV&ndash;info</a>
                     </h1>
                 </li>
                 <li><a href="index.html"> Home page</a></li>
@@ -45,8 +45,8 @@
         </p>
     </article>
     <figure class="picture1">
-        <img src="img/contact_picture.jpg" alt="a picture of me, the author of this website." title="Me"/>
-        <figcaption> This is me.</figcaption>
+        <img class="side_image" src="img/contact_picture.jpg" alt="a picture of me, the author of this website." title="Me">
+        <figcaption class="side_image"> This is me.</figcaption>
     </figure>
 <!-- Second article, about my first car-->
     <article class="article2">
@@ -57,18 +57,18 @@
         </header>
         <p>
             Back in 2023 my brother and I wanted to buy our first car. While looking at cars to buy, I researched almost every single aspect of EVs in great detail, also to prepare myself for how driving an EV would truly be.
-            Eventually we ended up buying a 2020 (30th of December) fully electric Opel Corsa. I’m incredibly happy with the car, I have even driven it to Paris and back to the Netherlands. If I had the choice, I would definitely buy it again.
+            Eventually we ended up buying a 2021 &lpar;31st of December&rpar; fully electric Opel Corsa. I'm incredibly happy with the car, I have even driven it to Paris and back to the Netherlands. If I had the choice, I would definitely buy it again.
         </p>
         <p>
             When I was researching cars, however, I realized how difficult it was to find concise information about EVs, how many stigmas, and legitimate concerns there are around EVs, which is why I have made this website.
         </p>
     </article>
     <figure class="picture2">
-        <img src="img/car_picture.jpg" alt="a picture of my car" title="my car"/>
-        <figcaption> This is my brother's and my car.</figcaption>
+        <img class="full_image" src="img/car_picture.jpg" alt="a picture of my car" title="my car">
+        <figcaption class="full_image"> This is my brother's and my car.</figcaption>
     </figure>
 <!-- Third article, about how to contact me-->
-    <article class="article3">
+    <aside class="article3">
         <header>
             <h3>
                 Contact me
@@ -78,21 +78,25 @@
             If I have made a mistake in the information given on the website, or if you would just like to ask me a question, please fill in the form below and I will do my best to get back to you in a timely manner.
         </p>
         <form class="contact_form" action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message: </label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Submit">
+            <fieldset>
+                <legend>Contact Form</legend>
+    
+                <label for="name">Name&colon; </label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email&colon; </label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message&colon; </label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Submit">
+            </fieldset>
         </form>
-    </article>
+    </aside>
     <figure class="picture3">
-        <img src="img/edited_car_in_france.jpg" alt="a picture of my car" title="my car"/>
-        <figcaption> This is my brother's and my car.</figcaption>
+        <img class="side_image" src="img/edited_car_in_france.jpg" alt="a picture of my car" title="my car">
+        <figcaption class="side_image"> This is my brother's and my car.</figcaption>
     </figure>
 
 

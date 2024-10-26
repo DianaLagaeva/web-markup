@@ -1,0 +1,157 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #F3F3F3;
+}
+
+/* this is for the makeup of the text */
+/* this is the makeup of the text in the navigation bar */
+h1{
+    font-family:'Zilla Slab', Tahoma, sans-serif;
+    font-weight:700;
+    font-style:normal;
+    font-size:2rem;
+    letter-spacing: 1px;
+    word-spacing: initial;
+}
+
+.navigation li{
+    font-family:'Zilla Slab', Tahoma , sans-serif;
+    font-weight:600;
+    font-style: normal;
+    font-size: 1.25rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+
+/* from here is the makeup of the text in the articles */
+h2{
+    font-family:'Zilla Slab', Tahoma , sans-serif;
+    font-weight:700;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 130%;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+h3, .footer li{
+    font-family:'Zilla Slab', Tahoma , sans-serif;
+    font-weight:700;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+
+p, figcaption{
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+
+
+/* makeup of the articles */
+article, section, aside {
+    width: 100%;
+    margin: 0.75rem 0;
+    box-sizing:border-box;
+}
+
+/* my one and only > tag, extremely useful here though */
+body > header{
+    width:100%;
+    margin: 2rem 0 1.25rem 0;
+    text-align:center;
+}
+
+.conclusion {
+    padding: 10px 20px;
+    margin-top: 2rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #59B1AE;
+    border-radius: 10px;
+    background-color: #ACE1AF;
+}
+
+/* makeup of the images */
+.picture1 , .picture2 , .picture3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.75rem 0;
+}
+
+.full_image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.side_image{
+    width: 85%;
+    border-radius: 8px;
+}
+
+.illustration_image{
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+
+
+/* for the grid template */
+.pageTitle{
+    grid-area: pageTitle;
+}
+
+.navigation{
+    grid-area: navigation;
+}
+
+.conclusion{
+    grid-area: topConclusion;
+}   
+
+.article1{
+    grid-area: article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+
+.article3{
+    grid-area: article3;
+}
+
+.article4{
+    grid-area: article4;
+}
+
+.picture1{
+    grid-area: picture1;
+}
+
+.picture2{
+    grid-area: picture2;
+}
+
+.picture3{
+    grid-area: picture3;
+}
+
+.footer{
+    grid-area: footer;
+}

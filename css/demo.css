@@ -1,103 +1,82 @@
-*{
-    padding:0;
-    margin:0;
-
+body{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 20% 5% 35% 15% 5% 20%;
+     grid-template-areas: 
+        'navigation navigation  navigation  navigation  navigation  navigation'
+        '.          .           pageTitle   pageTitle   .           .'
+        '.          picture1    picture1    picture1    picture1    .'
+        '.          .           article1    article1    .           .'
+        '.          .           article2    picture2    .           .'
+        '.          .           article3    picture2    .           .'
+        '.          .           picture3    picture3    .           .'
+        'footer     footer      footer      footer      footer      footer';    
 }
 
-
-
-/* This is for the navigation bar */
-.navigation{
-    width:100%;
-    padding: 0;
-    border-width:0 0 1px 0;
-    border-style:solid;
-    border-color: black;
-    margin: 0;
-    overflow:hidden;
-}
-.navigation ul {
-    list-style: none;
-    margin:0;
-}
-.navigation li:not(#title) {
-    float:right;
-    line-height:67px;
-    width:9%;
-    margin-right:2%;
-}
-#title{
-    float:left;
-    line-height:67px;
-    width:34%;
-    margin: 0;
-}
-#title h1{
-    margin: 0;
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 5% 90% 5%;
+         grid-template-areas: 
+            'navigation navigation      navigation'
+            '.          pageTitle       .'
+            '.          picture1        .'
+            '.          article1        .'
+            '.          article2        .'
+            '.          picture2        .'
+            '.          article3        .'
+            '.          picture3        .'
+            'footer     footer          footer';    
+    }
 }
 
-/* makeup of the website title + links */
-.navigation a{
-    display:block;
-    text-align:center;
-    text-transform:uppercase;
-    text-decoration:none;
-}
-
-/* This is for hovering over, current page hightlight and getting rid of the visited pages being purple */
-.navigation ul li > a:hover{
-    background-color: #343434;
-    color:#FFFFFF;
-}
-
-.current{
-    background-color: #111111;
-    color:#ffffff;
-}
-
-.navigation ul li a:visited:not(.current, .navigation ul li > a:hover){
-    color:#000000;
-}
-
-/* currently just style for the picture, but will expand to include the articles */
+/* Extra makeup for article 1, the pros and cons list */
 .article1{
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
-    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    border: 2px solid #59B1AE;
+    border-radius: 10px;
+    background-color: #ACE1AF;
 }
 
-.picture1{
-    width:45%;
-    float:left;
+.Pros_and_Cons{
+    margin: 1rem 0;
+    display:flex;
+    justify-content: space-evenly;
+    list-style:none;
 }
-    
-.picture1 img{
-    max-width: 100%;
+
+.Pros_and_Cons li{
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+    text-indent: -1rem;
 }
-    
-/* This is for the the aside with pros and cons
-*/
-.prosAndCons{
-    width: 45%;
-    float:right;
+
+.Pros_and_Cons ol li, aside ol li{
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+    text-indent: initial;
 }
-    
-.article2{
-    width:90%;
-    float:left;
+
+/*Text indent is very useful here, moves the numbers of the ordered list slightly to thee right */
+.article3 ol{
+    list-style-position: inside;
 }
-    
-.article3{
-    width:90%;
-    float:left;
+
+/* Extra makeup for article 3, the assumptions */
+aside ol li {
+    text-indent: inherit;
 }
-    
-/* this is the footer with copyright information */
-.ending{
-    width:100%;
-    float:left;
-    bottom:0;
-    text-align:center;
-    background-color: aquamarine;
-}
+
+
+
+

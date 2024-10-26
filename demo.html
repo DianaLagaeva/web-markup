@@ -3,96 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" >
+    <link rel="stylesheet" type="text/css" href="css/general_css.css" >
     <link rel="stylesheet" type="text/css" href="css/demo.css" >
-    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
-    <title>Website name</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>EV&ndash;info</title>
 </head>
 <body>
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
-                <li id="title">
-                    <h1>
-                    <a href="index.html">Website name</a>
-                    </h1>
-                </li>
-                <li><a href="contact.html"> Contact</a></li>
-                <li><a href="tips.html"> Tips</a></li>
-                <li><a href="range.html"> Range</a></li>
-                <li><a href="emissions.html"> Emissions</a></li>
-                <li><a href="fuel-economy.html"> Fuel economy</a></li>
-                <li><a class="current" href="index.html"> Home page</a></li>
-            </ul>
+            <li id="title">
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="The website logo" title="Home page"></a>
+                <h1>
+                    <a href="index.html">EV&ndash;info</a>
+                </h1>
+            </li>
+            <li><a class="current" href="index.html"> Home page</a></li>
+            <li><a href="fuel-economy.html"> Fuel economy</a></li>
+            <li><a href="emissions.html"> Emissions</a></li>
+            <li><a href="range.html"> Range</a></li>
+            <li><a href="tips.html"> Tips</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
     </nav>
-<!-- First article-->
-        <article class="article1">
-            <header>
-                <h2>
-                    Welcome to my website!
-                </h2>
-            </header>
+<!-- From here onwards is where the articles reside-->
+<!-- Page title and tagline -->
+        <header class="pageTitle">
+            <h2>
+                Welcome to EV&ndash;info.nl&excl;
+            </h2>
+
+            <h3>
+                Information about Electric Vehicles
+            </h3>
+<!-- here I use my one and only strong tag-->
             <p>
-                Here you can find an array of information about Electric Vehicles, mainly compared to Internal Combustion Engine (ICE) Vehicles, to help you decide if an Electric Vehicle (EV) is right for you!
+                On <strong>EV&ndash;info.nl</strong> you can find an array of information about Electric Vehicles, mainly compared to Internal Combustion Engine &lpar;ICE&rpar; Vehicles, to help you decide if an Electric Vehicle &lpar;EV&rpar; is right for you&excl;
             </p>
-        </article>
+        </header>
         <figure class="picture1">
-            <img src="img/dioptaas1.jpg" alt="Should be a picture of a car. Currently a picture of a rock" title="a picture of my car" >
-            <figcaption> A picture of my car. Currently a placeholder rock.</figcaption>
+            <img class="full_image" src="img/car_picture_main_page.jpg" alt="A picture of an Electric vehicle" title="a picture of my car" >
+            <figcaption class="full_image"> A picture of my car.</figcaption>
         </figure>
-<!-- list of pros and cons -->
-        <aside class="prosAndCons">
+<!-- list of pros and cons, which is a section -->
+        <section class="article1">
             <header> 
                 <h2>
-                    Pros and cons of purchasing an EV compared to a gasoline powered car (ICE) 
+                    Pros and cons of purchasing an EV compared to a gasoline powered car &lpar;ICE&rpar;
                 </h2>
             </header>
-        </aside>
+            <ul class="Pros_and_Cons">
+                <li>
+                    Pros
+                    <ol>
+                        <li>Cheaper to fuel&semi;</li>
+                        <li>More sustainable&semi;</li>
+                        <li>Better future proofing&semi;</li>
+                        <li>Less money to the fossil fuel industry&semi;</li>
+                    </ol>
+                </li>
+                <li>
+                    Cons
+                    <ol>
+                        <li>More expensive to purchase&semi;</li>
+                        <li>Less range&semi;</li>
+                        <li>Takes longer to fuel&semi;</li>
+                        <li>Travelling is more difficult&semi;</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
 <!-- Second article-->
         <article class="article2">
             <header> 
                 <h2>
-                    Why an EV?        
+                    Why an EV&quest;   
                 </h2>
             </header>
             <p>
                 An increasing amount of laws are being introduced to restrict or outright ban ICEs due to various environmental reasons, making EVs seem like they are the future. Even more so because EVs as technology are incredibly new compared to ICE vehicles.
-                A car is already one of the most expensive single purchases and an EV is even more expensive than an ICE vehicle, but can an EV make up for that price difference? Is it cheaper to fuel an EV or a gasoline powered car?
-                <a href="fuel-economy.html"> Find out here.</a>
+                A car is already one of the most expensive single purchases and an EV is even more expensive than an ICE vehicle, but can an EV make up for that price difference&quest; Is it cheaper to fuel an EV or a gasoline powered car&quest;
+                 <a href="fuel-economy.html">Find out here.</a>
             </p>
         </article>
-        <article class="article3">
+        <figure class="picture2">
+            <img class="side_image" src="img/eu_flag.jpg" alt="Picture of a the flag of the European Union." title="a picture of the EU flag." >
+            <figcaption class="side_image"> The EU is implementing an increasing number of regulations.</figcaption>
+        </figure>
+<!-- Third article, which is actually an aside, as it explains things about the content around it, in this case the rest of the website -->
+        <aside class="article3">
             <header>
                 <h2>
                     Assumptions
                 </h2>
             </header>
             <p>
-                For all calculations on this website I assume the following:
+                For all calculations on this website I assume the following&colon;
             </p>
             <ol>
                 <li>
-                    An original total car price between € 25.000 and € 45.000 (more on how to buy an EV cheaper here);
+                    An original total car price between &euro; 25.000 and &euro; 45.000 &lpar;more on how to buy an EV cheaper here&rpar;&semi;
                 </li>
                 <li>
                     A battery capacity between 40 and 60 kWh.
                 </li>
             </ol>
-        </article>
-
-        <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message: </label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+        </aside>
+        <figure class="picture3">
+            <img class="full_image" src="img/car.jpg" alt="Picture of a Electric Vehicle at the car dealership." title="a picture of a car at a car dealership." >
+            <figcaption class="full_image"> A car at a car dealership.</figcaption>
+        </figure>
 <!-- Footer with copyright information -->
-    <footer class="ending">
+    <footer class="footer">
         <p> Copyright &copy; Jeroen van der Valk. All Rights Reserved</p>
     </footer>
 

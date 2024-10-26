@@ -34,7 +34,7 @@
 
 #title h1{
     float:left;
-    margin-left:10%;
+    margin-left:5%;
 }
 
 .navigation a{
@@ -44,6 +44,7 @@
     text-decoration:none;
     border-radius:1rem;
 }
+
 
 
 /* This is for hovering over, current page hightlight and getting rid of the link colours */
@@ -59,4 +60,66 @@
 
 .navigation ul li a:not(.current, .navigation ul li > a:hover){
     color:#000000;
+}
+
+/* This is for the footer */
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100vw;
+    padding: 1rem 0;
+    margin-top: 4rem;
+    background-color:#ACE1AF;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer .logo{
+    float:inherit;
+}
+
+.footer a{
+    display: block;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.footer a:visited:not(.footer a:hover){
+    color:#000000;
+}
+
+.footer a:hover{
+    color:#0000EE;
+}
+
+/* this is for the mobile version */
+@media (max-width: 768px){
+    .navigation ul{
+        flex-direction: column;
+        line-height: 3rem;
+    }
+
+    .navigation ul li{
+        margin-bottom:0.5rem;
+    }
+
+    #title{
+        width:100%;
+        margin: 15px 0 15px 0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    #title a, #title h1{
+        flex-shrink:0;
+    }
+
+    .navigation ul li > a:active{
+        background-color: #343434;
+        color:#FFFFFF;
+    }
 }
