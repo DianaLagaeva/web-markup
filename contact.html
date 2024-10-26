@@ -80,17 +80,23 @@
         <form class="contact_form" action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
             <fieldset>
                 <legend>Contact Form</legend>
+
+                <p>Fields with an &ast; are mandatory.</p>
     
-                <label for="name">Name&colon; </label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Full Name&ast;&colon; </label>
+                <input type="text" id="name" name="name" value="name" required>
+
+<!-- I'd much prefer to change the value="email", but that is what was required by the assignment -->
+                <label for="email">Email&ast;&colon; </label>
+                <input type="email" id="email" name="email" value="email" required>
+
+                <label for="tel">Phone number&colon; </label>
+                <input type="tel" id="tel" name="tel" placeholder="&plus;31 0612345678">
     
-                <label for="email">Email&colon; </label>
-                <input type="email" id="email" name="email" required>
+                <label for="message">Message&ast;&colon; </label>
+                <textarea id="message" name="message" placeholder="Type your message here"></textarea>
     
-                <label for="message">Message&colon; </label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </fieldset>
         </form>
     </aside>
