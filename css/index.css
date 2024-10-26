@@ -39,13 +39,19 @@ body{
 }
 
 .Pros_and_Cons{
-    margin: 1rem 0;
+
+    margin-top: 1rem;
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     list-style:none;
 }
 
-.Pros_and_Cons li{
+.Pros_and_Cons > li{
+    box-sizing:border-box;
+    width:275px;
+    padding-left:1.5rem;
+    margin-bottom: 1rem;
     font-family:'Cabin', Georgia, serif;
     font-weight: 400;
     font-style:normal;
@@ -55,6 +61,7 @@ body{
     word-spacing: initial;
     text-indent: -1rem;
 }
+
 
 .Pros_and_Cons ol li, aside ol li{
     font-family:'Cabin', Georgia, serif;
