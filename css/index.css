@@ -85,5 +85,94 @@ aside ol li {
 }
 
 
+/* All of this is markup for the cookies popup */
+.cookiesBackground{
+    width:100vw;
+    height:100vh;
+    margin:0;
+
+    background-color: rgba(0,0,0,0.8);
+
+    z-index: 9999;
+    position:fixed;
+}
+
+.popup{
+    min-width:250px;
+    width:40%;
+    padding:1rem;
+    margin-left:auto;
+    margin-right:auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-content: flex-start;
+    
+    background-color: #ACE1AF;
+    z-index: 9999;
+    position:fixed;
+    top:20%;
+    right:0;
+    left:0;
+
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+    text-align: center;
+}
+
+.popup header, .popup p{
+    width:100%;
+    align-self: start;
+}
+
+.popup label{
+    cursor:pointer;
+}
+
+.accept{
+    min-width:100px;
+    width:25%;
+    padding: 0.5rem 0;
+    margin-top:2rem;
+    margin-right:9px;
+    align-self: center;
+    display:block;
+
+    background-color: #59B1AE;
+    border-radius:8px;
+}
+
+.alsoAccept{
+    min-width: 100px;
+    width:25%;
+    padding: 0.5rem 0;
+    margin-top:2rem;
+    margin-left:9px;
+    display:block;
+
+    background-color: rgb(154, 154, 154);
+    border-radius:8px;
+}
+
+#accept, #alsoAccept{
+    display:none;
+}
+
+.cookiesBackground:has(#accept:checked){
+    display:none;
+}
+
+.cookiesBackground:has(#alsoAccept:checked){
+    display:none;
+}
+
+
 
 

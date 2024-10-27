@@ -15,7 +15,6 @@ body{
         'footer         footer          footer';
 }
 
-
 /* makeup of the contact form */
 .contact_form fieldset{
     background-color: #ACE1AF;
@@ -87,6 +86,8 @@ body{
     margin: 1rem 0;
     align-self:center;
 }
+
+
 
 
 @media (max-width:769px){

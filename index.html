@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeroen van der Valk">
     <link rel="stylesheet" type="text/css" href="css/navigation.css" >
     <link rel="stylesheet" type="text/css" href="css/general_css.css" >
     <link rel="stylesheet" type="text/css" href="css/index.css" >
@@ -10,6 +11,24 @@
     <title>EV&ndash;info</title>
 </head>
 <body>
+<!-- the cookies popup-->
+    <aside class="cookiesBackground">
+        <section class="popup">
+            <header>
+                <h2>
+                    Would you like to accept cookies?
+                </h2>
+            </header>
+            <p>
+                This website uses no actual cookies, except maybe the ones from google fonts.
+            </p>
+            <label class="accept" for="accept">I accept</label>
+            <input type="checkbox" id="accept"/>
+            
+            <label class="alsoAccept" for="alsoAccept">I accept but in grey</label>
+            <input type="checkbox" id="alsoAccept"/>
+        </section>
+    </aside>
 <!-- Header with Website name and navigation bar -->
     <nav class="navigation">
         <ul>
@@ -29,91 +48,91 @@
     </nav>
 <!-- From here onwards is where the articles reside-->
 <!-- Page title and tagline -->
-        <header class="pageTitle">
-            <h2>
-                Welcome to EV&ndash;info.nl&excl;
-            </h2>
+    <header class="pageTitle">
+        <h2>
+            Welcome to EV&ndash;info.nl&excl;
+        </h2>
 
-            <h3>
-                Information about Electric Vehicles
-            </h3>
+        <h3>
+            Information about Electric Vehicles
+        </h3>
 <!-- here I use my one and only strong tag-->
-            <p>
-                On <strong>EV&ndash;info.nl</strong> you can find an array of information about Electric Vehicles, mainly compared to Internal Combustion Engine &lpar;ICE&rpar; Vehicles, to help you decide if an Electric Vehicle &lpar;EV&rpar; is right for you&excl;
-            </p>
-        </header>
-        <figure class="picture1">
-            <img class="full_image" src="img/car_picture_main_page.jpg" alt="A picture of an Electric vehicle" title="a picture of my car" >
-            <figcaption class="full_image"> A picture of my car.</figcaption>
-        </figure>
+        <p>
+            On <strong>EV&ndash;info.nl</strong> you can find an array of information about Electric Vehicles, mainly compared to Internal Combustion Engine &lpar;ICE&rpar; Vehicles, to help you decide if an Electric Vehicle &lpar;EV&rpar; is right for you&excl;
+        </p>
+    </header>
+    <figure class="picture1">
+        <img class="full_image" src="img/car_picture_main_page.jpg" alt="A picture of an Electric vehicle" title="a picture of my car" >
+        <figcaption class="full_image"> A picture of my car.</figcaption>
+    </figure>
 <!-- list of pros and cons, which is a section -->
-        <section class="article1">
-            <header> 
-                <h2>
-                    Pros and cons of purchasing an EV compared to a gasoline powered car &lpar;ICE&rpar;
-                </h2>
-            </header>
-            <ul class="Pros_and_Cons">
-                <li>
-                    Pros
-                    <ol>
-                        <li>Cheaper to fuel&semi;</li>
-                        <li>More sustainable&semi;</li>
-                        <li>Better future proofing&semi;</li>
-                        <li>Less money to the fossil fuel industry&semi;</li>
-                    </ol>
-                </li>
-                <li>
-                    Cons
-                    <ol>
-                        <li>More expensive to purchase&semi;</li>
-                        <li>Less range&semi;</li>
-                        <li>Takes longer to fuel&semi;</li>
-                        <li>Travelling is more difficult&semi;</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
+    <section class="article1">
+        <header> 
+            <h2>
+                Pros and cons of purchasing an EV compared to a gasoline powered car &lpar;ICE&rpar;
+            </h2>
+        </header>
+        <ul class="Pros_and_Cons">
+            <li>
+                Pros
+                <ol>
+                    <li>Cheaper to fuel&semi;</li>
+                    <li>More sustainable&semi;</li>
+                    <li>Better future proofing&semi;</li>
+                    <li>Less money to the fossil fuel industry&semi;</li>
+                </ol>
+            </li>
+            <li>
+                Cons
+                <ol>
+                    <li>More expensive to purchase&semi;</li>
+                    <li>Less range&semi;</li>
+                    <li>Takes longer to fuel&semi;</li>
+                    <li>Travelling is more difficult&semi;</li>
+                </ol>
+            </li>
+        </ul>
+    </section>
 <!-- Second article-->
-        <article class="article2">
-            <header> 
-                <h2>
-                    Why an EV&quest;   
-                </h2>
-            </header>
-            <p>
-                An increasing amount of laws are being introduced to restrict or outright ban ICEs due to various environmental reasons, making EVs seem like they are the future. Even more so because EVs as technology are incredibly new compared to ICE vehicles.
-                A car is already one of the most expensive single purchases and an EV is even more expensive than an ICE vehicle, but can an EV make up for that price difference&quest; Is it cheaper to fuel an EV or a gasoline powered car&quest;
-                 <a href="fuel-economy.html">Find out here.</a>
-            </p>
-        </article>
-        <figure class="picture2">
-            <img class="side_image" src="img/eu_flag.jpg" alt="Picture of a the flag of the European Union." title="a picture of the EU flag." >
-            <figcaption class="side_image"> The EU is implementing an increasing number of regulations.</figcaption>
-        </figure>
+    <article class="article2">
+        <header> 
+            <h2>
+                Why an EV&quest;   
+            </h2>
+        </header>
+        <p>
+            An increasing amount of laws are being introduced to restrict or outright ban ICEs due to various environmental reasons, making EVs seem like they are the future. Even more so because EVs as technology are incredibly new compared to ICE vehicles.
+            A car is already one of the most expensive single purchases and an EV is even more expensive than an ICE vehicle, but can an EV make up for that price difference&quest; Is it cheaper to fuel an EV or a gasoline powered car&quest;
+            <a href="fuel-economy.html">Find out here.</a>
+        </p>
+    </article>
+    <figure class="picture2">
+        <img class="side_image" src="img/eu_flag.jpg" alt="Picture of a the flag of the European Union." title="a picture of the EU flag." >
+        <figcaption class="side_image"> The EU is implementing an increasing number of regulations.</figcaption>
+    </figure>
 <!-- Third article, which is actually an aside, as it explains things about the content around it, in this case the rest of the website -->
-        <aside class="article3">
-            <header>
-                <h2>
-                    Assumptions
-                </h2>
-            </header>
-            <p>
-                For all calculations on this website I assume the following&colon;
-            </p>
-            <ol>
-                <li>
-                    An original total car price between &euro; 25.000 and &euro; 45.000 &lpar;more on how to buy an EV cheaper here&rpar;&semi;
-                </li>
-                <li>
-                    A battery capacity between 40 and 60 kWh.
-                </li>
-            </ol>
-        </aside>
-        <figure class="picture3">
-            <img class="full_image" src="img/car.jpg" alt="Picture of a Electric Vehicle at the car dealership." title="a picture of a car at a car dealership." >
-            <figcaption class="full_image"> A car at a car dealership.</figcaption>
-        </figure>
+    <aside class="article3">
+        <header>
+            <h2>
+                Assumptions
+            </h2>
+        </header>
+        <p>
+            For all calculations on this website I assume the following&colon;
+        </p>
+        <ol>
+            <li>
+                An original total car price between &euro; 25.000 and &euro; 45.000 &lpar;more on how to buy an EV cheaper here&rpar;&semi;
+            </li>
+            <li>
+                A battery capacity between 40 and 60 kWh.
+            </li>
+        </ol>
+    </aside>
+    <figure class="picture3">
+        <img class="full_image" src="img/car.jpg" alt="Picture of a Electric Vehicle at the car dealership." title="a picture of a car at a car dealership." >
+        <figcaption class="full_image"> A car at a car dealership.</figcaption>
+    </figure>
 <!-- Footer with copyright information -->
     <footer class="footer">
         <ul>
@@ -131,6 +150,5 @@
             <li><a href="contact.html"> Contact</a></li>
         </ul>
     </footer>
-
 </body>
 </html>

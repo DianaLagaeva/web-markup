@@ -2,6 +2,8 @@
 .navigation{
     border-width:0 0 1px 0;
     padding: 0.3rem 0;
+    position:sticky;
+    top:0;
     border-style:solid;
     border-color: black;
     background-color: #ACE1AF;
@@ -113,6 +115,10 @@
 /* this is for the mobile version */
 @media (max-width: 768px){
     /* mobile navigation bar */
+    .navigation{
+        position:static;
+    }
+
     .navigation ul{
         flex-direction: column;
         line-height: 3rem;
