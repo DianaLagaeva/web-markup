@@ -1,14 +1,65 @@
-article{
-    height: 150vh;
+body{
+    display:grid;
+    justify-content: center;   
 }
 
+/* Extra makeup so the page is a bit larger */
+.pageTitle{
+    min-height:30vh;
+}
+
+/* Extra makeup for article 1, the pros and cons list */
+.article1{
+    padding: 10px 20px;
+    margin-top: 2rem;
+    border: 2px solid #59B1AE;
+    border-radius: 10px;
+    background-color: #ACE1AF;
+}
+
+.article1 h2::first-letter{
+    text-transform:uppercase;
+    text-decoration: underline;
+}
+
+.Pros_and_Cons{
+    
+    margin-top: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    
+    font-family:'Cabin', Georgia, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+
+.Pros_and_Cons td{
+    width: 275px;
+    vertical-align: top;
+}
+
+.Pros_and_Cons tr:nth-child(even){
+    background-color: #CFF;
+}
+
+.Pros_and_Cons tr:nth-child(odd){
+    background-color: #FFF;
+}
+
+
+
+/* this is for the cookies popup */
 .cookiesBackground{
     width:100vw;
     height:100vh;
     margin:0;
-
+    
     background-color: rgba(0,0,0,0.8);
-
+    
     z-index: 9999;
     position:fixed;
 }
@@ -19,7 +70,7 @@ article{
     padding:1rem;
     margin-left:auto;
     margin-right:auto;
-
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,7 +83,7 @@ article{
     top:20%;
     right:0;
     left:0;
-
+    
     font-family:'Cabin', Georgia, serif;
     font-weight: 400;
     font-style:normal;
@@ -60,9 +111,13 @@ article{
     margin-right:9px;
     align-self: center;
     display:block;
-
+    
     background-color: #59B1AE;
     border-radius:8px;
+}
+
+.accept:hover{
+    background-color: #6edbd7;
 }
 
 .alsoAccept{
@@ -72,9 +127,13 @@ article{
     margin-top:2rem;
     margin-left:9px;
     display:block;
-
+    
     background-color: rgb(154, 154, 154);
     border-radius:8px;
+}
+
+.alsoAccept:hover{
+    background-color: rgb(174, 174, 174);
 }
 
 #accept, #alsoAccept{
@@ -89,3 +148,30 @@ article{
     display:none;
 }
 
+/* This is for the desktop site */
+@media(min-width: 768px) {
+    body{
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: 
+               'navigation navigation      navigation'
+               '.          pageTitle       .'
+               '.          article1        .'
+               'footer     footer          footer';  
+    }
+}
+
+/* this is for the mobile version */
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 5% 90% 5%;
+         grid-template-areas: 
+            'navigation navigation      navigation'
+            '.          pageTitle       .'
+            '.          article1        .'
+            'footer     footer          footer';    
+    }
+
+    .article1{
+        padding: 10px 10px;
+    }
+}

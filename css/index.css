@@ -149,6 +149,10 @@ aside ol li {
     border-radius:8px;
 }
 
+.accept:hover{
+    background-color: #6edbd7;
+}
+
 .alsoAccept{
     min-width: 100px;
     width:25%;
@@ -159,6 +163,10 @@ aside ol li {
 
     background-color: rgb(154, 154, 154);
     border-radius:8px;
+}
+
+.alsoAccept:hover{
+    background-color: rgb(174, 174, 174);
 }
 
 #accept, #alsoAccept{
